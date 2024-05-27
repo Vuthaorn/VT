@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="./index.css">
+    <!-- Link Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="icon" href="/image/Logo_starBucks.png">
+</head>
+<body>
+    <!-- section home -->
+    <section id="home" class="home">
+        <!-- navbar  -->
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./image/logo.png" alt="logo" class="rounded-circle" width="60px" height="60px">
+                    <span class="text-success fw-bold">StarBucks</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control form-control-sm me-2" type="search" placeholder="Search" aria-label="Search">
+                        <div class="cart-count">0</div>
+                        <i class="bi bi-bag-heart buy"></i>
+                        <i class="bi bi-moon-stars-fill moon"></i>
+                    </form>
+                </div>
+            </div>
+            <div class="cart">
+                <div class="cart-title">Cart Items</div>
+                <div class="cart-content">
+        <!--
+                  <div class="cart-box">
+                    <img src="images/97.jpg" class="cart-img">
+                    <div class="detail-box">
+                      <div class="cart-food-title">Special Dosai</div>
+                      <div class="price-box">
+                        <div class="cart-price">Rs.72</div>
+                         <div class="cart-amt">Rs.72</div>
+                     </div>
+                      <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    <ion-icon name="trash" class="cart-remove"></ion-icon>
+                  </div>
+        
+                  <div class="cart-box">
+                    <img src="images/97.jpg" class="cart-img">
+                    <div class="detail-box">
+                      <div class="cart-food-title">Special Dosai</div>
+                      <div class="price-box">
+                        <div class="cart-price">Rs.72</div>
+                         <div class="cart-amt">Rs.72</div>
+                     </div>
+                      <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    <ion-icon name="trash" class="cart-remove"></ion-icon>
+                  </div>
+                -->
+                </div>
+                
+              <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">Rs.0</div>
+              </div>
+        
+              <button class="btn-buy">Place Order</button>
+        
+              <ion-icon name="close" id="cart-close"></ion-icon>
+        
+              </div>
+            </div>
+        </nav>
+        <!-- hero -->
+        <div class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 hero-text">
+                        <h1 class="display-4 text-white">
+                            <span class="text-success fw-bold">Starbucks</span>
+                            <h2>It's not just coffee</h2>
+                        </h1>
+                        <p class="lead text-secondary">
+                            <span class="text-success fw-bold">Starbucks</span> is a company that provides a wide range
+                            of products and services to customers.
+                        </p>
+                        <a href="#products" class="btn btn-success btn-sm mt-5">
+                            <span class="text-light fw-bold">Learn More</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 hero-img mt-lg-0 mt-5">
+                        <img src="../image/banner.jpg" alt="hero" class="img-fluid">
+                        <!-- <img src="../image/cream3.jpg" alt=""> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section product -->
+    <section class="product" id="products">
+        <div class="container">
+            <!-- list product by link -->
+            <div class="row my-5">
+                <div class="col-lg-10">
+                    <div class="row bg-light p-2">
+                        <div class="col-2 iconbx">
+                            <img src="../image/menu.png" alt="products" class="img-fluid" id="all">
+                        </div>
+                        <div class="col-2 iconbx">
+                            <img src="../image/bread.png" alt="products" class="img-fluid" id="btn-1">
+                        </div>
+                        <div class="col-2 iconbx">
+                            <img src="../image/frappe.png" alt="products" class="img-fluid" id="btn-2">
+                        </div>
+                        <div class="col-2 iconbx">
+                            <img src="../image/coffee-cup.png" alt="products" class="img-fluid" id="btn-4">
+                        </div>
+                        <div class="col-2 iconbx">
+                            <img src="../image/milk.png" alt="products" class="img-fluid" id="btn-5">
+                        </div>
+                        <div class="col-2 iconbx">
+                            <img src="../image/logo_burger.png" alt="products" class="img-fluid" id="btn-6">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-2 caret bg-light">
+                    <input type="text" placeholder="search product" class="form-control form-control-sm"
+                        id="search-item">
+                    <i class="bi bi-search search"></i>
+                    <!-- <i class="bi bi-arrow-left-circle next"></i>
+                    <i class="bi bi-arrow-right-circle prev"></i> -->
+                </div>
+            </div>
+            <!-- product item -->
+            <div class="row product-list">
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container my-4">
+            <div class="row pt-5">
+                <div class="col-12 text-center ">
+                    <h1 class="display-4 text-white">
+                        <span class="text-success fw-bold">About Us</span>
+                    </h1>
+                    <p class="lead text-secondary">
+                        <span class="text-success fw-bold">Starbucks</span> is a company that provides a wide range of
+                        products and services to customers.
+                    </p>
+                    <!-- about us -->
+
+                </div>
+            </div>
+            <div class="row p-lg-4">
+                <div class="col-lg-6  shadow-lg">
+                    <div class="imag pt-2">
+                        <img src="./image/pic3.jpg" alt="">
+                    </div>
+                    <div class="title position-absolute ">
+                        <i class="bi bi-buildings-fill" id="icon"></i>
+                    </div>
+                    <div class="content mt-5">
+                        <p>
+                            <span class="text-success fw-bold">Starbucks</span>
+                            Our story begins in 1971 along the cobblestone streets of Seattle’s
+                            historic Pike Place Market.
+                        </p>
+                        <a href="#" class="more">Read more</a>
+
+                    </div>
+                </div>
+                <div class="col-lg-6  shadow-lg">
+                    <div class="imag pt-2">
+                        <img src="./image/pic1.jpg" alt="">
+                    </div>
+                    <div class="title position-absolute ">
+                        <i class="fa-regular fa-handshake" id="icon"></i>
+                    </div>
+                    <div class="content mt-5 pb-4">
+                        <p>
+                            <span class="text-success fw-bold">Our Partners</span>
+                            We like to say that we are not in the coffee business serving people,Our employees – who we
+                            call partners
+                        </p>
+                        <a href="#" class="more">Read more</a>
+
+                    </div>
+                </div>
+                <div class="col-lg-6  shadow-lg">
+                    <div class="imag pt-2 ">
+                        <img src="./image/pic3.jpg" alt="">
+                    </div>
+                    <div class="title position-absolute ">
+                        <i class="fa-solid fa-user-group" id="icon"></i>
+                    </div>
+                    <div class="content mt-5 pb-4">
+                        <p>
+                            <span class="text-success fw-bold">Starbucks</span> is a company that provides a wide range
+                            of products and services to customers.
+                        </p>
+                        <a href="#" class="more">Read more</a>
+
+                    </div>
+                </div>
+                <div class="col-lg-6  shadow-lg">
+                    <div class="imag pt-2">
+                        <img src="./image/pic4.jpg" alt="">
+                    </div>
+                    <div class="title position-absolute ">
+                        <i class="fa-solid fa-mug-saucer " id="icon"></i>
+                    </div>
+                    <div class="content mt-5">
+                        <p>
+                            <span class="text-success fw-bold">Starbucks</span> is a company that provides a wide range
+                            of products and services to customers.
+                        </p>
+                        <a href="#" class="more">Read more</a>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-4  shadow-lg">
+                    <div class="imag pt-2">
+                        <img src="../image/pic1"  alt="">
+                    </div>
+                    <div class="title position-absolute ">
+                        <p class="fw-bold">People</p>
+                    </div>
+                    <div class="content mt-5 pb-4">
+                        <p>
+                            <span class="text-success fw-bold">Starbucks</span  > is a company that provides a wide range of products and services to customers.
+                        </p>
+                        <p>
+                            <span class="text-success fw-bold">Starbucks</span  > is a company that provides a wide range of products and services to customers.
+                        </p>
+                        <a href="#" class="more">Read more</a>
+
+                    </div>
+                </div>
+                <div class="col-lg-4  shadow-lg">
+                    <div class="imag pt-2">
+                        <img src="../image/pic1"  alt="">
+                    </div>
+                    <div class="title position-absolute ">
+                        <p class="fw-bold">People</p>
+                    </div>
+                    <div class="content mt-5 pb-4">
+                        <p>
+                            <span class="text-success fw-bold">Starbucks</span  > is a company that provides a wide range of products and services to customers.
+                        </p>
+                        <p>
+                            <span class="text-success fw-bold">Starbucks</span  > is a company that provides a wide range of products and services to customers.
+                        </p>
+                        <a href="#" class="more">Read more</a>
+
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="service" id="service">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-12 text-center ">
+                    <h1 class="display-4 text-white">
+                        <span class="text-success fw-bold">Service</span>
+                    </h1>
+                    <!-- what should i need to have in the service section -->
+                </div>
+                <h3 class="text-success fw-medium ">What I provide</h3>
+                <div class="row">
+                    <div class="col-lg-4 service-box">
+                        <div class="content-top">
+                            <i class="bi bi-truck"></i>
+                        </div>
+                        <div class="content-body">
+                            <h3 class="fw-bold">Delivery</h3>
+                            <p>
+                                <span class="text-success fw-bold">Starbucks</span uy> we will deliver you a copy of our
+                                service to your convenience address below
+                            </p>
+                        </div>
+                        <div class="content-bottom">
+                            <a href="#" class="more">Read more <i class="bi bi-caret-right-fill"></i></a>
+                            <a href="https://www.google.com/maps"> <i class="bi bi-geo-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 service-box">
+                        <div class="content-top">
+                            <i class="bi bi-truck"></i>
+                        </div>
+                        <div class="content-body">
+                            <h3 class="fw-bold">Delivery</h3>
+                            <p>
+                                <span class="text-success fw-bold">Starbucks</span uy> we will deliver you a copy of our
+                                service to your convenience address below
+                            </p>
+                        </div>
+                        <div class="content-bottom">
+                            <a href="#" class="more">Read more <i class="bi bi-caret-right-fill"></i></a>
+                            <a href="https://www.google.com/maps"> <i class="bi bi-geo-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 service-box">
+                        <div class="content-top">
+                            <i class="bi bi-truck"></i>
+                        </div>
+                        <div class="content-body">
+                            <h3 class="fw-bold">Delivery</h3>
+                            <p>
+                                <span class="text-success fw-bold">Starbucks</span uy> we will deliver you a copy of our
+                                service to your convenience address below
+                            </p>
+                        </div>
+                        <div class="content-bottom">
+                            <a href="#" class="more">Read more <i class="bi bi-caret-right-fill"></i></a>
+                            <a href="https://www.google.com/maps"> <i class="bi bi-geo-alt"></i></a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-12 text-center ">
+                    <h1 class="display-4 text-white">
+                        <span class="text-secondary fw-bold">Contact</span>
+                    </h1>
+                    <!-- what should i need to have in the contact section -->
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-lg-6 col-3 my-5">
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15696.561015142251!2d104.911198!3d11.5322231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951dd4550f51f%3A0x26710d605b9ccce0!2sPhsar%20Derm%20Thkov%20roundabout%20(Mermaid%20roundabout)%2C%20No.%2027-28%2C%2012307%20St%20488%2C%20Phnom%20Penh!5e0!3m2!1sen!2skh!4v1631885292106!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-3 my-5 py-4 bg-light">
+                    <h3 class="fw-bold">Get in touch</h3>
+                    <!-- contact form -->
+                    <form action="" method="post">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Email" aria-label="Email"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="phone" aria-label="Subject"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <textarea class="form-control" aria-label="With textarea">cmmt</textarea>
+                        </div>
+                        <button type="button" class="btn btn-info text-light">send</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- loader-container -->
+    <!-- <div class="loader-container">
+        <img src="./image/animetion.gif" width="800px" alt="">
+    </div> -->
+    <div class="divider"></div>
+    <footer>
+        <div class="footer-row">
+
+            <div class="footer-col">
+                <div class="footer-item">
+                    <h2 class="link">About Us</h2>
+                    <i class="bi bi-caret-down"></i>
+                </div>
+                <ul class="footer-link">
+                    <li><a href="">Our Company</a></li>
+                    <li><a href="">Our Coffee</a></li>
+                    <li><a href="">Stories and News</a></li>
+                    <li><a href="">StarBucks Archive</a></li>
+                    <li><a href="">Investor Relations</a></li>
+                    <li><a href="">Customer Service</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <div class="footer-item">
+                    <h2 class="link">Careers</h2>
+                    <i class="bi bi-caret-down"></i>
+                </div>
+                <ul class="footer-link">
+                    <li><a href="">Culture and Values</a></li>
+                    <li><a href="">Inclusion, Diversity, and Equity</a></li>
+                    <li><a href="">College Achievement Plan</a></li>
+                    <li><a href="">Alumni Community</a></li>
+                    <li><a href="">U.S Careers</a></li>
+                    <li><a href="">International Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <div class="footer-item">
+                    <h2 class="link">Social Impact</h2>
+                    <i class="bi bi-caret-down"></i>
+                </div>
+                <ul class="footer-link">
+                    <li><a href="">People</a></li>
+                    <li><a href="">Planet</a></li>
+                    <li><a href="">Environmental and Social Impact Reporting</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <div class="footer-item">
+                    <h2 class="link">For Business Partners</h2>
+                    <i class="bi bi-caret-down"></i>
+                </div>
+                <ul class="footer-link">
+                    <li><a href="">Landlord Support Center</a></li>
+                    <li><a href="">Suppliers</a></li>
+                    <li><a href="">Corporate Gifts Card Sales</a></li>
+                    <li><a href="">Office and Foodservice Coffee</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <div class="footer-item">
+                    <h2 class="link">Order and Pick Up</h2>
+                    <i class="bi bi-caret-down"></i>
+                </div>
+                <ul class="footer-link">
+                    <li><a href="">Order on the App</a></li>
+                    <li><a href="">Order on the Web</a></li>
+                    <li><a href="">Delivery</a></li>
+                    <li><a href="">Order and Pick Up Option</a></li>
+                    <li><a href="">Explore and Find Coffee for Home</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="social">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-pinterest"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-youtube"></i></a>
+            <a href=""><i class="bi bi-spotify"></i></a>
+        </div>
+
+        <div class="footer-list">
+            <a href="">Privacy Notice</a>
+            <span>|</span>
+            <a href="">Terms of Use</a>
+            <span>|</span>
+            <a href="">Do Not Share My Personal Information</a>
+            <span>|</span>
+            <a href="">CA Supply Chain Act</a>
+            <span>|</span>
+            <a href="">Accessibility</a>
+            <span>|</span>
+            <a href="">Cookie Preferences</a>
+            <span>|</span>
+        </div>
+        <p class="copyright">&copy; 2024 Starbucks Coffee Company. All rights reserved.</p>
+    </footer>
+    <script src="./js/app.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
+<script>
+    const sr = ScrollReveal({
+        origin: 'top',
+        distance: '70px',
+        duration: 2000,
+        delay: 200
+    });
+    sr.reveal('.table-box', { interval: 300 }); // Add this line
+    sr.reveal('.hero-text', { origin: 'left', interval: 300 });
+    sr.reveal('.hero-img', { interval: 300 });
+    sr.reveal('.box', { interval: 300 });
+</script>
+<!-- git init
+git add .
+git commit - m "Hello"
+git branch -M main
+git remot....
+git push...
+ -->

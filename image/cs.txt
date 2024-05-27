@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    width: 400px;
+    margin: 30px auto;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#show-btn{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(54, 239, 252);
+    border-radius: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    font-size: 19px;
+    font-weight: bold;
+}
+#hide-btn{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(252, 54, 87);
+    border-radius: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    font-size: 19px;
+    font-weight: bold;
+}
+#toggle-btn{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(255, 118, 184);
+    border-radius: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: rgb(54, 239, 252);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    font-size: 19px;
+    font-weight: bold;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.box-item{
+    width: 400px;
+    margin: 30px auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+.title{
+    font: 600 30px monospace;
+    background: url(https://images.nightcafe.studio/jobs/Q4p90uSF6xO8kdF0aU2E/Q4p90uSF6xO8kdF0aU2E_8.9286x.jpg?tr=w-1600,c-at_max);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+    background-position: center;
+}
+.box-item img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.box-item p{
+    font: 600 17px monospace;
+    background: url(https://images.nightcafe.studio/jobs/Q4p90uSF6xO8kdF0aU2E/Q4p90uSF6xO8kdF0aU2E_8.9286x.jpg?tr=w-1600,c-at_max);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+    background-position: center;
+}
+.icon{
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.heart{
+   font-size: 20px;
+   color: red;
+}
+.facebook{
+    font-size: 20px;
+    color: blue;
+}
+.youtube{
+    font-size: 20px;
+    color: rgb(255, 57, 57);
+}
